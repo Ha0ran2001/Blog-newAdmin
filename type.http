@@ -1,0 +1,6 @@
+### get type
+
+GET http://127.0.0.1:8080/front/articleTypes HTTP/1.1
+
+### get articles
+GET http://127.0.0.1:8080/front/article/42 HTTP/1.1
