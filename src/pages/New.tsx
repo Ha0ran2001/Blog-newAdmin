@@ -79,7 +79,7 @@ const New: React.FC<NewProps> = ({ id }) => {
   return (
     <div className='h-full'>
       <div
-        className='flex items-center justify-between text-black'
+        className='flex items-center justify-between text-black py-4'
       >
         <div
           onClick={() => history.goBack()}

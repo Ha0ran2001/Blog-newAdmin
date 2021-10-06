@@ -64,7 +64,7 @@ const Home: React.FC<HomeProps> = () => {
           ))}
         </div>
         {/* add new article */}
-        <div className='w-full h-full dark:bg-gray-800 overflow-y-auto sm:p-5'>
+        <div className='w-full h-full dark:bg-gray-800 overflow-y-auto p-5'>
           <div className='h-full'>
             <Route path='/new'><New /></Route>
             <Route path='/article/:id'><ArticleItem /></Route>
