@@ -77,9 +77,9 @@ const New: React.FC<NewProps> = ({ id }) => {
   }
 
   return (
-    <div className='md:h-homeHeight'>
+    <div className='h-full'>
       <div
-        className='flex items-center justify-between text-black my-2'
+        className='flex items-center justify-between text-black'
       >
         <div
           onClick={() => history.goBack()}
@@ -119,7 +119,7 @@ const New: React.FC<NewProps> = ({ id }) => {
       <div className='flex justify-between'>
         <button
           onClick={addArticle}
-          className='px-4 py-2 text-white bg-purple-700 rounded-md active:ring-2 ring-purple-400 my-5'
+          className='px-4 py-2 text-white bg-purple-700 rounded-md active:ring-2 ring-purple-400 my-4'
         >
           Submit
         </button>
@@ -131,7 +131,7 @@ const New: React.FC<NewProps> = ({ id }) => {
               history.push('/');
               window.location.reload();
             }}
-            className='text-white px-4  bg-gray-300 dark:bg-gray-600 rounded-md my-5'
+            className='text-white px-4  bg-gray-300 dark:bg-gray-600 rounded-md my-4'
           >
             删除
           </button>}

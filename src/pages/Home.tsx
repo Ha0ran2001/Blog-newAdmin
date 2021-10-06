@@ -39,8 +39,8 @@ const Home: React.FC<HomeProps> = () => {
   }, []);
 
   return (
-    <div className='dark:bg-gray-900 text-white md:h-homeHeight h-auto box-border relative'>
-      <main className='w-full border-2 border-purple-400 dark:border-blue-900 rounded-md relative md:h-[500px] flex flex-col md:flex-row'>
+    <div className='dark:bg-gray-900 text-white box-border relative'>
+      <main className='w-full border-2 border-purple-400 dark:border-blue-900 rounded-md relative md:h-[80vh] xl:h-[76vh] flex flex-col md:flex-row'>
         <div className='flex md:flex-col overflow-x-scroll overflow-y-hidden  md:w-[400px] md:overflow-y-scroll md:overflow-x-hidden'>
           <div className='w-[100px] md:w-full md:h-[60px] h-36 inline-block whitespace-nowrap align-middle p-5'>
             <div className='w-full h-full cursor-pointer text-yellow-300' onClick={() => history.push('/new')}>添加</div>
@@ -64,7 +64,7 @@ const Home: React.FC<HomeProps> = () => {
           ))}
         </div>
         {/* add new article */}
-        <div className='w-full h-full dark:bg-gray-800 overflow-y-scroll p-5'>
+        <div className='w-full h-full dark:bg-gray-800 overflow-y-auto sm:p-5'>
           <div className='h-full'>
             <Route path='/new'><New /></Route>
             <Route path='/article/:id'><ArticleItem /></Route>

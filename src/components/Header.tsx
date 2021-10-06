@@ -8,11 +8,18 @@ import useDarkMode from '@/utils/useDarkMode';
 
 const Header: React.FC = () => {
 
-  const [theme, setTheme] = useDarkMode();
+  const [, setTheme] = useDarkMode();
+
+  const history = useHistory();
 
   return (
     <header className='flex justify-between py-5 px-5 dark:text-white'>
-      <Link to='/home'><p className='text-2xl font-bold hover:text-yellow-300 cursor-pointer'>Ha0ran的博客后台</p></Link>
+      <p
+        className='text-2xl font-bold hover:text-yellow-300 cursor-pointer'
+        onClick={() => history.push('/home')}
+      >
+        Ha0ran的博客后台
+      </p>
       <div className='flex flex-col items-center space-y-4 md:flex-row md:space-y-0 space-x-2 '>
         <div className='cursor-pointer' onClick={() => {
           localStorage.removeItem('token');

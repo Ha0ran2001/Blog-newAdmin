@@ -24,7 +24,7 @@ function App() {
 
   return (
     <Router>
-      <div className='dark:bg-[#101725] md:h-screen md:px-10 px-2 pt-5'>
+      <div className='dark:bg-[#101725] min-h-screen md:px-10 px-2 pt-5'>
         <Header />
         <Switch>
           <Route path='/home'><Home /></Route>
